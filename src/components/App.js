@@ -1,5 +1,5 @@
 import React from 'react'
-
+import GiftListContainer from '../containers/GifListContainer'
 import NavBar from './NavBar'
 
 // the App component should render out the GifListContainer component 
@@ -7,9 +7,12 @@ import NavBar from './NavBar'
 const App = () => {
   return (
     <div>
-        < NavBar color='black' title="Giphy Search" />
+        <NavBar color='black' title="Giphy Search"/>
+        <GiftListContainer/>
     </div>
   )
 }
 
 export default App
+
+// fetch('https://api.giphy.com/v1/gifs/search?q=dolphin&api_key=LO9Gz099FXErPHsj8QmACiuFqRZp1SjE&rating=g')
